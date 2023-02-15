@@ -1,0 +1,10 @@
+.container {
+  width: auto;
+  display: grid;
+  background-color: aqua;
+  padding: 10px;
+}
+
+.item {
+  background-color: yellowgreen;
+}

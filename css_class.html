@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            button {
+                color: blue;
+                width: 100px;
+            }
+            h1, h2 {color: blue;}
+            h3 {color: magenta;}
+
+            div > h1 {
+                color: green;
+            }
+
+            main > h1 {
+                color: red;
+            }
+            
+            /* class */
+            .samsung { color: blue; }
+            .fast-campus { width: 200px; }
+
+            /* id */
+            #violet { color: violet; }
+
+            /* 특정 요소 하위에만 클래스 적용 */
+            div > .color-bv { color: blueviolet;}
+            
+            span > .test { color: red;}
+
+            span.test { color: blue;}
+
+            /* 가상선택자 */
+            button:hover {color: grey;}
+            button:active {color: blue;}
+
+        </style>
+    </head>
+
+    <body>
+
+        <!--
+        <button style="color: blue; width: 100px;">버튼</button>
+    -->
+
+    <button>이것은 버튼</button><br/>
+
+    
+    <div>
+        <h1>div > 중첩 헤딩 레벨</h1>
+        <button class="color-bv">버튼!</button>
+    </div>
+
+    <main>
+        <h1>main > 헤딩레벨 h1</h1>
+        <h2>main > 헤딩레벨 h2</h2>
+    </main>
+   
+    <h1>이것은 파랑 h1</h1>
+    <h2>이것도 파랑 h2</h2>
+    <h3>이건 마젠타 h3</h3>
+
+    <button class="samsung fast-campus">클래스버튼</button><br/>
+    <button id="violet">id버튼</button><br/>
+    <button class="fast-campus" id="violet">class와id</button><br/>
+
+    <!-- span.test span 태그가 클래스를 test로 가지고 있음 -->
+    <span class="test">안녕하세요</span>
+
+    <!-- span > .test span 태그의 자식 태그가 클래스를 test로 가지고 있음 -->
+    <span>
+        <button class="test">큰 버튼</button>
+    </span>
+        
+    </body>
+
+    
+</html>

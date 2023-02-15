@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <style>
+    .container {
+      width: auto;
+      display: grid;
+      background-color: aqua;
+      padding: 10px;
+    }
+
+    .item {
+      background-color: yellowgreen;
+    }
+
+    @media (max-width: 300px) {
+      .container {
+        grid-template-rows: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 301px) {
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">아이템1</div>
+    <div class="item">아이템2</div>
+    <div class="item">아이템3</div>
+  </div>
+</body>
+</html>
